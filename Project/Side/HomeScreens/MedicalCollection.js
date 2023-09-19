@@ -29,8 +29,6 @@ export default function MedicalCollection({navigation,route}) {
             <View style={Style.ViewParentType}>
         <FlatList
           data={med}
-          
-
           numColumns={1}
           //  horizontal={true}
           key={"#"}
@@ -56,7 +54,7 @@ export default function MedicalCollection({navigation,route}) {
 
             )
             }
-            if(item.subcategory_name.toLowerCase().includes(searchResults.toLowerCase())){
+               if(item.subcategory_name.toLowerCase().includes(searchResults.toLowerCase())){
               return (
 
                 <TouchableOpacity style={Style.TouchMainflatluistdata13} onPress={() => navigation.navigate('DeatilsScreen',{deatils:item})} >

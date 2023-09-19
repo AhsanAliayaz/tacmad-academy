@@ -6,7 +6,7 @@ import HeaderTop from '../../Components/HeaderTop/HeaderTop'
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
 import Video from 'react-native-video'
 import { useWindowDimensions } from 'react-native';
-import RenderHtml from 'react-native-render-html';
+// import RenderHtml from 'react-native-render-html';
 import { WebView } from 'react-native-webview';
 import { AppOpenAd, InterstitialAd, RewardedAd, BannerAd, TestIds, BannerAdSize,AdEventType } from 'react-native-google-mobile-ads';
 
@@ -30,9 +30,9 @@ export default function DeatilsScreen({ navigation, route }) {
         
     //   };
 
-const adUnitId = TestIds.INTERSTITIAL;
+      const adUnitId = TestIds.INTERSTITIAL;
 
-    const Interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+      const Interstitial = InterstitialAd.createForAdRequest(adUnitId, {
         requestNonPersonalizedAdsOnly: true,
         
         keywords: ['fashion', 'clothing'],
@@ -71,10 +71,9 @@ const adUnitId = TestIds.INTERSTITIAL;
                     androidHardwareAccelerationDisabled={true}
                     allowsFullscreenVideo={true}
                 
-
                     />
-
-                </View>
+                    </View>
+                    
                 {/* {deatils.subcategory_video ?
                     <View style={Style.VideoView}>
 

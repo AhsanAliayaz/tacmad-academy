@@ -97,6 +97,7 @@ export default function SignIn({navigation}) {
           <Text style={Style.TextFreemain}>Welcome Back!</Text>
           
         </View>
+        
           <View style={Style.Viewimage}>
             <Image resizeMode='contain' style={{width: 150, height: 150,}} source={require('../../Assets/Png/16.png')} /> 
           </View>
@@ -109,7 +110,7 @@ export default function SignIn({navigation}) {
         <View style={Style.ParentViewTextInputLogin}>
          
           <View style={Style.TopFullName}>
-            <Text style={Style.TextfullNameTop}>E-mail</Text>
+                      <Text style={Style.TextfullNameTop}>E-mail</Text>
           </View>
           <InputText emailstate={email} setEmail={(text) => { setEmail(text), setEmailError('') }} placeholder={'Enter e-mail'} 
           borderColor={EmailError ? 'red' : Colors.neutral551}
@@ -141,6 +142,7 @@ export default function SignIn({navigation}) {
             <Text style={Style.TextSignUp}>Sign Up</Text>
           </TouchableOpacity>
         </View>
+
       </ScrollView>
 
       <Loader visible={isLoading} />

@@ -38,6 +38,8 @@ export default function PrivacyPolicy({ navigation }) {
       })
   }
 
+  
+
 
   return (
     <ScrollView>
@@ -54,6 +56,7 @@ export default function PrivacyPolicy({ navigation }) {
         <View style={Style.Button}>
           <CommonButton onPress={() => { navigation.navigate('SignIn'), dispatch(addBoarding()) }} title={'Done'} />
         </View>
+        
         <Loader visible={isLoading} />
       </View>
 

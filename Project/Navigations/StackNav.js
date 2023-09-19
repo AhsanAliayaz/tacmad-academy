@@ -42,6 +42,7 @@ export default function StackNav() {
 
     return (
         <NavigationContainer>
+            
             <Stack.Navigator>
 
 
